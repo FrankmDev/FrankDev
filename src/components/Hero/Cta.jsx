@@ -1,4 +1,4 @@
 export default function Cta() {
-  return <a>Hello</a>;
+  return <button>Contact me!</button>;
 }
 <style></style>;

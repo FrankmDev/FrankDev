@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 ---
 
 <header class="header">
-  <Image src={Logo} alt="FrankDev Logo" class="logo" height="200" width="200" />
+  <Image src={Logo} alt="FrankDev Logo" class="logo" />
   <Nav />
 </header>
 
@@ -14,7 +14,7 @@ import { Image } from "astro:assets";
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: -1.5rem 2rem;
+    margin: 1rem 2rem;
   }
   .logo {
     width: 8rem;
