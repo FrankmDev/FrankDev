@@ -1,0 +1,23 @@
+---
+import Nav from "./Nav.astro";
+import Logo from "../../../public/Logo.png";
+import { Image } from "astro:assets";
+---
+
+<header class="header">
+  <Image src={Logo} alt="FrankDev Logo" class="logo" height="200" width="200" />
+  <Nav />
+</header>
+
+<style>
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -1.5rem 2rem;
+  }
+  .logo {
+    width: 8rem;
+    height: auto;
+  }
+</style>
