@@ -4,18 +4,17 @@ import { Image } from "astro:assets";
 import HeroImg from "../../../public/Hero-Img.png";
 ---
 
-<section class="hero">
+<section id="hero">
   <HeroText />
   <div class="hero-img">
     <Image src={HeroImg} alt="Hero Image" class="image" />
   </div>
 </section>
 <style>
-  .hero {
-    width: 78%;
+  #hero {
+    width: 70%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    grid-template-columns: 1.5fr 1fr;
   }
   .hero-img {
     display: flex;
