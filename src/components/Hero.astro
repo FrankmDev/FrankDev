@@ -4,7 +4,7 @@ import HeroImg from "../../public/Hero-Img.png";
 ---
 
 <section id="hero">
-  <div class="hero-text">
+  <div class="hero-text flex flex-col justify-center items-start">
     <p class="welcome-text">Welcome to my portfolio</p>
     <h1 class="heading-primary">Hi! My name is Frank!</h1>
     <p class="secondary">
@@ -73,8 +73,8 @@ import HeroImg from "../../public/Hero-Img.png";
       </div>
     </div>
   </div>
-  <div class="hero-img">
-    <Image src={HeroImg} alt="Hero Image" class="image" />
+  <div class="flex items-center justify-center">
+    <Image src={HeroImg} alt="Hero Image" class="w-full h-full object-cover" />
   </div>
 </section>
 <style>
@@ -83,11 +83,6 @@ import HeroImg from "../../public/Hero-Img.png";
     display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
-  .hero-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .image {
     width: 100%;
@@ -95,25 +90,19 @@ import HeroImg from "../../public/Hero-Img.png";
     object-fit: cover;
   }
   .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1.2rem;
+    text-wrap: balance;
   }
 
   .heading-primary {
     font-size: 9.5rem;
     padding-left: 0.4rem;
     line-height: 12rem;
-    text-wrap: balance;
-    letter-spacing: 0;
   }
 
   .secondary {
     font-size: 1.5rem;
     padding-left: 0.4rem;
-    text-wrap: balance;
   }
 
   .welcome-text {
