@@ -1,8 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import HeroSection from "../components/Hero/Hero-Section.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout>
-  <HeroSection />
+  <main>
+    <Header />
+    <Hero />
+  </main>
 </Layout>
+
+<style>
+  main {
+    height: 100vh;
+    background-image: url("../../public/BG-Img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    gap: 2.5rem;
+  }
+</style>

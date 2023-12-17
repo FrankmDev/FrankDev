@@ -1,0 +1,297 @@
+---
+import { Image } from "astro:assets";
+import HeroImg from "../../public/Hero-Img.png";
+---
+
+<section id="hero">
+  <div class="hero-text">
+    <p class="welcome-text">Welcome to my portfolio</p>
+    <h1 class="heading-primary">Hi! My name is Frank!</h1>
+    <p class="secondary">
+      Passionate self-taught web developer. Currently, advancing my education by
+      pursuing the Higher Degree in Web Application Development (DAW) and have
+      accumulated valuable experience through various certificate courses and
+      personal projects.
+    </p>
+
+    <div class="socials-hero">
+      <button class="cta-hero" type="button">
+        <span class="cta-hero-content">Let's conect</span>
+      </button>
+      <a
+        href="https://www.linkedin.com/in/frankmdev/"
+        target="_blank"
+        class="social"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="55"
+          width="40"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://github.com/FrankmDev" target="_blank" class="social">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="55"
+          width="45"
+          viewBox="0 0 496 512"
+        >
+          <path
+            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+          ></path>
+        </svg>
+      </a>
+      <div class="button" data-tooltip="Size: 10Mb">
+        <div class="button-wrapper">
+          <div class="text">Download CV</div>
+          <span class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="2em"
+              height="2em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <Image src={HeroImg} alt="Hero Image" class="image" />
+  </div>
+</section>
+<style>
+  #hero {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  .heading-primary {
+    font-size: 9.5rem;
+    padding-left: 0.4rem;
+    line-height: 12rem;
+    text-wrap: balance;
+    letter-spacing: 0;
+  }
+
+  .secondary {
+    font-size: 1.5rem;
+    padding-left: 0.4rem;
+    text-wrap: balance;
+  }
+
+  .welcome-text {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 1rem;
+    background: transparent;
+    font-size: 1.4rem;
+  }
+
+  .socials-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  .social {
+    fill: #fff;
+    padding: 0.2rem;
+  }
+  /* CTA */
+
+  .cta-hero {
+    font-family: inherit;
+    font-size: 1.8rem;
+    position: relative;
+    overflow: hidden;
+    height: 5rem;
+    padding: 2rem 2rem;
+    border-radius: 1.5rem;
+    background: #352943;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+  }
+
+  .cta-hero:hover::before {
+    transform: scaleX(1);
+  }
+
+  .cta-hero-content {
+    position: relative;
+    z-index: 1;
+    top: -0.72rem;
+  }
+
+  .cta-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+  /* DOWNLOAD */
+
+  .button {
+    --width: 130px;
+    --height: 40px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #531686;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    transition: background 0.3s;
+  }
+
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 1rem;
+    color: #111;
+    border-radius: 15px;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+
+  .button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--tooltip-color);
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+
+  .button::after,
+  .button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-wrapper,
+  .text,
+  .icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+
+  .text {
+    top: 0;
+  }
+
+  .text,
+  .icon {
+    transition: top 0.5s;
+  }
+
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .button:hover {
+    background: #6c18ff;
+  }
+
+  .button:hover .text {
+    top: -100%;
+  }
+
+  .button:hover .icon {
+    top: 0;
+  }
+
+  .button:hover:before,
+  .button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+</style>
