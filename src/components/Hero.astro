@@ -6,7 +6,7 @@ import HeroImg from "../../public/Hero-Img.png";
 <section id="hero">
   <div class="hero-text flex flex-col justify-center items-start">
     <p class="welcome-text">Welcome to my portfolio</p>
-    <h1 class="heading-primary">Hi! My name is Frank!</h1>
+    <h1 class="heading-primary bg-transparent">Hi! My name is Frank!</h1>
     <p class="secondary">
       Passionate self-taught web developer. Currently, advancing my education by
       pursuing the Higher Degree in Web Application Development (DAW) and have
@@ -14,8 +14,11 @@ import HeroImg from "../../public/Hero-Img.png";
       personal projects.
     </p>
 
-    <div class="socials-hero">
-      <button class="cta-hero" type="button">
+    <div class="socials-hero flex items-center justify-center">
+      <button
+        class="cta-hero relative overflow-hidden h-20 rounded-lg text-white"
+        type="button"
+      >
         <span class="cta-hero-content">Let's conect</span>
       </button>
       <a
@@ -49,7 +52,7 @@ import HeroImg from "../../public/Hero-Img.png";
       <div class="button" data-tooltip="Size: 10Mb">
         <div class="button-wrapper">
           <div class="text">Download CV</div>
-          <span class="icon">
+          <span class="icon text-white flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -109,14 +112,10 @@ import HeroImg from "../../public/Hero-Img.png";
     border: 1px solid white;
     border-radius: 15px;
     padding: 1rem;
-    background: transparent;
     font-size: 1.4rem;
   }
 
   .socials-hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
     margin-top: 1.5rem;
   }
@@ -129,14 +128,11 @@ import HeroImg from "../../public/Hero-Img.png";
   .cta-hero {
     font-family: inherit;
     font-size: 1.8rem;
-    position: relative;
-    overflow: hidden;
     height: 5rem;
     padding: 2rem 2rem;
     border-radius: 1.5rem;
     background: #352943;
     background-size: 400%;
-    color: #fff;
     border: none;
   }
 
@@ -246,11 +242,7 @@ import HeroImg from "../../public/Hero-Img.png";
   }
 
   .icon {
-    color: #fff;
     top: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .icon svg {
