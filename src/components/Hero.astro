@@ -1,11 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import HeroImg from "../../public/Hero-Img.png";
+import HeroImg from "../../public/Hero-Img.webp";
 ---
 
 <section id="hero" class="w-9/12 grid">
   <div class="hero-text flex flex-col justify-center items-start gap-4">
-    <p class="welcome-text rounded-lg text-base">Welcome to my portfolio</p>
+    <p class="welcome-text rounded-lg text-base p-3">Welcome to my portfolio</p>
     <h1 class="bg-transparent text-8xl leading-normal">
       Hi! My name is Frank!
     </h1>
@@ -21,7 +21,7 @@ import HeroImg from "../../public/Hero-Img.png";
         class="cta-hero relative overflow-hidden h-12 rounded-lg text-white text-xl p-5 bg-[#352943]"
         type="button"
       >
-        <span class="cta-hero-content">Let's conect</span>
+        <span class="cta-hero-content z-10 relative">Let's conect</span>
       </button>
       <a
         href="https://www.linkedin.com/in/frankmdev/"
@@ -107,17 +107,11 @@ import HeroImg from "../../public/Hero-Img.png";
   }
   /* CTA */
 
-  .cta-hero {
-    background-size: 400%;
-  }
-
   .cta-hero:hover::before {
     transform: scaleX(1);
   }
 
   .cta-hero-content {
-    position: relative;
-    z-index: 1;
     top: -0.55rem;
   }
 
