@@ -3,12 +3,10 @@ import { Image } from "astro:assets";
 import HeroImg from "../../public/Hero-Img.webp";
 ---
 
-<section id="hero" class="w-9/12 grid">
+<section id="hero" class="w-9/12 grid gap-6">
   <div class="hero-text flex flex-col justify-center items-start gap-4">
     <p class="welcome-text rounded-lg text-base p-3">Welcome to my portfolio</p>
-    <h1 class="bg-transparent text-8xl leading-normal">
-      Hi! My name is Frank!
-    </h1>
+    <h1 class="bg-transparent text-8xl leading-normal">Hi there! I'm Frank!</h1>
     <p class="text-base pl-2">
       Passionate self-taught web developer. Currently, advancing my education by
       pursuing the Higher Degree in Web Application Development (DAW) and have
@@ -86,12 +84,16 @@ import HeroImg from "../../public/Hero-Img.webp";
     </div>
   </div>
   <div class="flex items-center justify-center">
-    <Image src={HeroImg} alt="Hero Image" class="w-full h-full object-cover" />
+    <Image
+      src={HeroImg}
+      alt="Hero Image"
+      class="hero-img w-full h-full object-cover"
+    />
   </div>
 </section>
 <style>
   #hero {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.5fr 0.9fr;
   }
   .hero-text {
     text-wrap: balance;
@@ -104,6 +106,17 @@ import HeroImg from "../../public/Hero-Img.webp";
   .social {
     fill: #fff;
     padding: 0.2rem;
+  }
+  .hero-img {
+    animation: updown 2s infinite alternate;
+  }
+  @keyframes updown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(25px);
+    }
   }
   /* CTA */
 
@@ -167,3 +180,25 @@ import HeroImg from "../../public/Hero-Img.webp";
     top: 0;
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const img = document.querySelector(".hero-img");
+
+    const isElementInViewport = (e) => {
+      const rect = e.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight)
+      );
+    };
+
+    const handleScroll = () => {
+      img.classList.toggle("animate", isElementInViewport(img));
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+  });
+</script>
