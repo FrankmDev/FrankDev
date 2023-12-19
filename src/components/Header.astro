@@ -3,9 +3,9 @@ import Logo from "../../public/Logo.png";
 import { Image } from "astro:assets";
 ---
 
-<header class="header flex items-center justify-between">
-  <Image src={Logo} alt="FrankDev Logo" class="logo w-56 h-auto" />
-  <nav class="nav flex items-center justify-center gap-20">
+<header class="flex items-center justify-between my-6 mx-16 w-[80vw]">
+  <Image src={Logo} alt="FrankDev Logo" class="w-32 h-auto" />
+  <nav class="flex items-center justify-center gap-20">
     <ul class="flex items-center justify-center gap-20">
       <li><a href="#" class="nav-item">Home</a></li>
       <li><a href="#" class="nav-item">Skills</a></li>
@@ -14,7 +14,8 @@ import { Image } from "astro:assets";
     </ul>
     <button
       type="button"
-      class="flex items-center text-white bg-pink-700 bg-transparent tracking-wider"
+      class="flex items-center text-white bg-pink-700 bg-transparent tracking-wider
+      py-3 pl-3 pr-4 rounded-xl text-lg"
     >
       <svg
         class="mr-1"
@@ -35,28 +36,11 @@ import { Image } from "astro:assets";
 </header>
 
 <style>
-  .header {
-    margin: 2.2rem 4rem;
-    width: 80vw;
-  }
-  .logo {
-    width: 14rem;
-    height: auto;
-  }
-  .nav ul li {
-    list-style: none;
-  }
   .nav-item {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: rgb(236, 236, 236);
+    font-size: 1rem;
   }
   button {
-    font-family: inherit;
-    padding: 0.8em 1.3em 0.8em 0.9em;
     border: 1px solid white;
-    border-radius: 16px;
-    font-size: 17px;
   }
 
   button svg {

@@ -3,20 +3,22 @@ import { Image } from "astro:assets";
 import HeroImg from "../../public/Hero-Img.png";
 ---
 
-<section id="hero">
-  <div class="hero-text flex flex-col justify-center items-start">
-    <p class="welcome-text">Welcome to my portfolio</p>
-    <h1 class="heading-primary bg-transparent">Hi! My name is Frank!</h1>
-    <p class="secondary">
+<section id="hero" class="w-9/12 grid">
+  <div class="hero-text flex flex-col justify-center items-start gap-4">
+    <p class="welcome-text rounded-lg text-base">Welcome to my portfolio</p>
+    <h1 class="bg-transparent text-8xl leading-normal">
+      Hi! My name is Frank!
+    </h1>
+    <p class="text-base pl-2">
       Passionate self-taught web developer. Currently, advancing my education by
       pursuing the Higher Degree in Web Application Development (DAW) and have
       accumulated valuable experience through various certificate courses and
       personal projects.
     </p>
 
-    <div class="socials-hero flex items-center justify-center">
+    <div class="flex items-center justify-center gap-4 mt-3">
       <button
-        class="cta-hero relative overflow-hidden h-20 rounded-lg text-white"
+        class="cta-hero relative overflow-hidden h-12 rounded-lg text-white text-xl p-5 bg-[#352943]"
         type="button"
       >
         <span class="cta-hero-content">Let's conect</span>
@@ -49,11 +51,18 @@ import HeroImg from "../../public/Hero-Img.png";
           ></path>
         </svg>
       </a>
-      <div class="button" data-tooltip="Size: 10Mb">
+      <div
+        class="download-btn text-center rounded-lg relative w-32 h-11 bg-[#531686]"
+      >
         <div class="button-wrapper">
-          <div class="text">Download CV</div>
-          <span class="icon text-white flex items-center justify-center">
+          <div class="text flex items-center justify-center top-0 text-sm">
+            Download CV
+          </div>
+          <span
+            class="icon text-white flex items-center justify-center top-full"
+          >
             <svg
+              class="w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               role="img"
@@ -82,43 +91,16 @@ import HeroImg from "../../public/Hero-Img.png";
 </section>
 <style>
   #hero {
-    width: 70%;
-    display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
-
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .hero-text {
-    gap: 1.2rem;
     text-wrap: balance;
-  }
-
-  .heading-primary {
-    font-size: 9.5rem;
-    padding-left: 0.4rem;
-    line-height: 12rem;
-  }
-
-  .secondary {
-    font-size: 1.5rem;
-    padding-left: 0.4rem;
   }
 
   .welcome-text {
     border: 1px solid white;
-    border-radius: 15px;
-    padding: 1rem;
-    font-size: 1.4rem;
   }
 
-  .socials-hero {
-    gap: 2rem;
-    margin-top: 1.5rem;
-  }
   .social {
     fill: #fff;
     padding: 0.2rem;
@@ -126,14 +108,7 @@ import HeroImg from "../../public/Hero-Img.png";
   /* CTA */
 
   .cta-hero {
-    font-family: inherit;
-    font-size: 1.8rem;
-    height: 5rem;
-    padding: 2rem 2rem;
-    border-radius: 1.5rem;
-    background: #352943;
     background-size: 400%;
-    border: none;
   }
 
   .cta-hero:hover::before {
@@ -143,7 +118,7 @@ import HeroImg from "../../public/Hero-Img.png";
   .cta-hero-content {
     position: relative;
     z-index: 1;
-    top: -0.72rem;
+    top: -0.55rem;
   }
 
   .cta-hero::before {
@@ -166,59 +141,8 @@ import HeroImg from "../../public/Hero-Img.png";
 
   /* DOWNLOAD */
 
-  .button {
-    --width: 130px;
-    --height: 40px;
-    --tooltip-height: 35px;
-    --tooltip-width: 90px;
-    --gap-between-tooltip-to-button: 18px;
-    --button-color: #531686;
-    --tooltip-color: #fff;
-    width: var(--width);
-    height: var(--height);
-    background: var(--button-color);
-    position: relative;
-    text-align: center;
-    border-radius: 0.45em;
+  .download-btn {
     transition: background 0.3s;
-  }
-
-  .button::before {
-    position: absolute;
-    content: attr(data-tooltip);
-    width: var(--tooltip-width);
-    height: var(--tooltip-height);
-    background-color: var(--tooltip-color);
-    font-size: 1rem;
-    color: #111;
-    border-radius: 15px;
-    line-height: var(--tooltip-height);
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-    left: calc(50% - var(--tooltip-width) / 2);
-  }
-
-  .button::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: var(--tooltip-color);
-    left: calc(50% - 10px);
-    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-  }
-
-  .button::after,
-  .button::before {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s;
-  }
-
-  .text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .button-wrapper,
@@ -232,47 +156,20 @@ import HeroImg from "../../public/Hero-Img.png";
     color: #fff;
   }
 
-  .text {
-    top: 0;
-  }
-
   .text,
   .icon {
     transition: top 0.5s;
   }
 
-  .icon {
-    top: 100%;
-  }
-
-  .icon svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  .button:hover {
+  .download-btn:hover {
     background: #6c18ff;
   }
 
-  .button:hover .text {
+  .download-btn:hover .text {
     top: -100%;
   }
 
-  .button:hover .icon {
+  .download-btn:hover .icon {
     top: 0;
-  }
-
-  .button:hover:before,
-  .button:hover:after {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .button:hover:after {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-  }
-
-  .button:hover:before {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
   }
 </style>
