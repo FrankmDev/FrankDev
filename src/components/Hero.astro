@@ -6,7 +6,9 @@ import HeroImg from "../../public/Hero-Img.webp";
 <section id="hero" class="w-9/12 grid gap-6">
   <div class="hero-text flex flex-col justify-center items-start gap-4">
     <p class="welcome-text rounded-lg text-base p-3">Welcome to my portfolio</p>
-    <h1 class="bg-transparent text-8xl leading-normal">Hi there! I'm Frank!</h1>
+    <h1 class="bg-transparent text-8xl leading-normal">
+      Hi there! I'm <span class="highlight">Frank</span>!
+    </h1>
     <p class="text-base pl-2">
       Passionate self-taught web developer. Currently, advancing my education by
       pursuing the Higher Degree in Web Application Development (DAW) and have
@@ -178,6 +180,14 @@ import HeroImg from "../../public/Hero-Img.webp";
 
   .download-btn:hover .icon {
     top: 0;
+  }
+  /* HIGHLIGHT */
+
+  .highlight {
+    background: linear-gradient(to right, #fdbb5c, #84f0d8);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 </style>
 

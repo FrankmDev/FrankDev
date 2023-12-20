@@ -10,12 +10,12 @@ import TailwindLogo from "../../public/Logos/Tailwind.png";
 
 <section id="skills-section">
   <div
-    class="skills flex items-center justify-center flex-col p-3 mb-3 rounded-xl bg-[#151515]"
+    class="flex items-center justify-center flex-col p-3 mb-3 rounded-xl bg-[#151515] max-w-min"
   >
     <header class="skills-header">
       <h2 class="skills-text text-lg mb-5">Skills</h2>
     </header>
-    <div class="skills-list grid gap-10 grid-cols-3">
+    <div class="skills-list flex gap-10">
       <Image class="skill-logo" src={HtmlLogo} alt="Html Logo" />
       <Image class="skill-logo" src={CssLogo} alt="CSS Logo" />
       <Image class="skill-logo" src={JSLogo} alt="Javascript Logo" />
@@ -26,12 +26,8 @@ import TailwindLogo from "../../public/Logos/Tailwind.png";
   </div>
 
   <style>
-    .skills {
-      width: 70vw;
-    }
-
     .skill-logo {
-      max-width: 8.5rem;
+      max-width: 4.5rem;
       object-fit: contain;
     }
   </style>
