@@ -14,7 +14,7 @@ import { Image } from "astro:assets";
     </ul>
     <button
       type="button"
-      class="flex items-center text-white bg-pink-700 bg-transparent tracking-wider
+      class="flex items-center text-white bg-transparent tracking-wider
       py-3 pl-3 pr-4 rounded-xl text-lg"
     >
       <svg
@@ -38,7 +38,28 @@ import { Image } from "astro:assets";
 <style>
   .nav-item {
     font-size: 1rem;
+    position: relative;
   }
+
+  .nav-item::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -0.25rem;
+    left: 50%;
+    transition:
+      width 0.35s,
+      left 0.35s;
+  }
+
+  .nav-item:hover::before {
+    width: 100%;
+    left: 0;
+  }
+
   button {
     border: 1px solid white;
   }

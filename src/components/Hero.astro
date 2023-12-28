@@ -5,20 +5,17 @@ import HeroImg from "../../public/Hero-Img.webp";
 
 <section id="hero" class="w-9/12 grid gap-6">
   <div class="hero-text flex flex-col justify-center items-start gap-4">
-    <p class="welcome-text rounded-lg text-base p-3">Welcome to my portfolio</p>
-    <h1 class="bg-transparent text-8xl leading-normal">
+    <p class="border-2 border-solid border-main rounded-lg text-base p-3">
+      Welcome to my portfolio
+    </p>
+    <h1 class="bg-transparent text-9xl leading-none">
       Hi there! I'm <span class="highlight">Frank</span>!
     </h1>
-    <p class="text-base pl-2">
-      Passionate self-taught web developer. Currently, advancing my education by
-      pursuing the Higher Degree in Web Application Development (DAW) and have
-      accumulated valuable experience through various certificate courses and
-      personal projects.
-    </p>
+    <p class="text-base">Passionate self-taught Frontend Developer.</p>
 
     <div class="flex items-center justify-center gap-4 mt-3">
       <button
-        class="cta-hero relative overflow-hidden h-12 rounded-lg text-white text-xl p-5 bg-[#352943]"
+        class="cta-hero relative overflow-hidden h-12 rounded-lg text-white text-xl p-5 bg-main"
         type="button"
       >
         <span class="cta-hero-content z-10 relative">Let's conect</span>
@@ -52,7 +49,7 @@ import HeroImg from "../../public/Hero-Img.webp";
         </svg>
       </a>
       <div
-        class="download-btn text-center rounded-lg relative w-32 h-11 bg-[#531686]"
+        class="download-btn text-center rounded-lg relative w-32 h-11 bg-main"
       >
         <div class="button-wrapper">
           <div class="text flex items-center justify-center top-0 text-sm">
@@ -95,14 +92,10 @@ import HeroImg from "../../public/Hero-Img.webp";
 </section>
 <style>
   #hero {
-    grid-template-columns: 1.5fr 0.9fr;
+    grid-template-columns: 1.7fr 0.9fr;
   }
   .hero-text {
     text-wrap: balance;
-  }
-
-  .welcome-text {
-    border: 1px solid white;
   }
 
   .social {
@@ -110,7 +103,7 @@ import HeroImg from "../../public/Hero-Img.webp";
     padding: 0.2rem;
   }
   .hero-img {
-    animation: updown 2s infinite alternate;
+    animation: updown 2.5s infinite alternate;
   }
   @keyframes updown {
     from {
@@ -171,7 +164,7 @@ import HeroImg from "../../public/Hero-Img.webp";
   }
 
   .download-btn:hover {
-    background: #6c18ff;
+    background: #5b3066;
   }
 
   .download-btn:hover .text {
@@ -184,10 +177,30 @@ import HeroImg from "../../public/Hero-Img.webp";
   /* HIGHLIGHT */
 
   .highlight {
-    background: linear-gradient(to right, #fdbb5c, #84f0d8);
-    color: transparent;
+    background-image: linear-gradient(
+      -225deg,
+      #532f5c 0%,
+      #c95f69 29%,
+      #f08961 67%,
+      #ffbe5d 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
     background-clip: text;
+    text-fill-color: transparent;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
   }
 </style>
 
