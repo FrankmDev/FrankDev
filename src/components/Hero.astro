@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import HeroImg from "../../public/Hero-Img.webp";
 ---
 
-<section id="hero" class="w-10/12 grid gap-6">
+<section id="hero" class="w-10/12 grid gap-6 max-w-[1350px]">
   <div class="hero-text flex flex-col justify-center items-start gap-4">
     <p class="border-2 border-solid border-main rounded-lg text-base p-3">
       Welcome to my portfolio
@@ -11,7 +11,11 @@ import HeroImg from "../../public/Hero-Img.webp";
     <h1 class="bg-transparent text-8xl leading-none">
       Hi there! I'm <span class="highlight text-9xl">Frank</span>!
     </h1>
-    <p class="text-base">Passionate self-taught Frontend Developer.</p>
+    <p class="text-base">
+      Passionate self-taught <span class="highlight text-xl"
+        >Frontend Developer</span
+      > .
+    </p>
 
     <div class="flex items-center justify-center gap-4 mt-3">
       <button
@@ -225,7 +229,7 @@ import HeroImg from "../../public/Hero-Img.webp";
 
   .highlight {
     margin: auto;
-    animation: lights 5s 750ms linear infinite;
+    animation: lights 5.5s 750ms linear infinite;
   }
 </style>
 
