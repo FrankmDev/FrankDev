@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets";
+import HtmlLogo from "../../public/Logos/HTML.webp";
+import CssLogo from "../../public/Logos/CSS.webp";
+import JSLogo from "../../public/Logos/Javascript.webp";
+import ReactLogo from "../../public/Logos/React.webp";
+import AstroLogo from "../../public/Logos/Astro.webp";
+import TailwindLogo from "../../public/Logos/Tailwind.webp";
+---
+
+<section id="about" class="flex flex-col">
+  <section id="info-section">
+    <article>
+      <h2 class="text-5xl">About me</h2>
+      <p>
+        Self-taught web developer seeking my first professional opportunity in
+        the technology sector. Currently pursuing a Higher Degree in Web
+        Application Development (DAW), I've gained experience through certified
+        courses and personal projects. In addition, I've spent three years
+        tutoring, enhancing my communication and teaching skills. While I
+        haven't applied my experience professionally, I'm eager to contribute my
+        skills and knowledge in a work environment. My determination,
+        creativity, and commitment drive me to tackle new challenges.
+      </p>
+    </article>
+    <figure>Imagen</figure>
+  </section>
+  <section id="skills-section" class="p-3">
+    <div
+      class="container flex items-center justify-center flex-col p-3 mb-3 rounded-xl bg-[#151515] max-w-min"
+    >
+      <header class="skills-header">
+        <h2 class="skills-text text-lg mb-5">Skills</h2>
+      </header>
+      <div class="skills-list flex gap-10">
+        <Image class="skill-logo" src={HtmlLogo} alt="Html Logo" />
+        <Image class="skill-logo" src={CssLogo} alt="CSS Logo" />
+        <Image class="skill-logo" src={JSLogo} alt="Javascript Logo" />
+        <Image class="skill-logo" src={ReactLogo} alt="React Logo" />
+        <Image class="skill-logo" src={AstroLogo} alt="Astro Logo" />
+        <Image class="skill-logo" src={TailwindLogo} alt="Tailwind Logo" />
+      </div>
+    </div>
+  </section>
+</section>
+
+<style>
+  .skill-logo {
+    max-width: 4.5rem;
+    object-fit: contain;
+  }
+  .container {
+  }
+</style>
