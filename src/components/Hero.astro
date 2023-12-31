@@ -139,7 +139,7 @@ import HeroImg from "../../public/Hero-Img.webp";
     border-radius: inherit;
     background: linear-gradient(
       82.3deg,
-      rgba(150, 93, 233, 1) 10.8%,
+      #965de9 10.8%,
       rgba(99, 88, 238, 1) 94.3%
     );
     transition: all 0.475s;
@@ -182,52 +182,48 @@ import HeroImg from "../../public/Hero-Img.webp";
 
   @keyframes lights {
     0% {
-      color: hsl(230, 40%, 80%);
       text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.2),
-        0 0 0.125em hsla(320, 100%, 60%, 0.3),
-        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+        0 0 0.5em rgba(90, 47, 101, 0.1),
+        0 0 0.0625em rgba(75, 80, 146, 0.15),
+        -0.5em -0.0625em 0.25em rgba(209, 92, 106, 0),
+        0.5em 0.0625em 0.25em rgba(73, 129, 123, 0);
     }
 
     30% {
-      color: hsl(230, 80%, 90%);
       text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 60%, 0.5),
-        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+        0 0 0.5em rgba(90, 47, 101, 0.15),
+        0 0 0.0625em rgba(75, 80, 146, 0.15),
+        -0.25em -0.0625em 0.125em rgba(209, 92, 106, 0.05),
+        0.25em 0.0625em 0.125em rgba(73, 129, 123, 0.1);
     }
 
     40% {
-      color: hsl(230, 100%, 95%);
       text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 90%, 0.5),
-        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+        0 0 0.5em rgba(90, 47, 101, 0.15),
+        0 0 0.0625em rgba(75, 80, 146, 0.15),
+        -0.125em -0.0625em 0.0625em rgba(209, 92, 106, 0.05),
+        0.125em 0.0625em 0.0625em rgba(73, 129, 123, 0.1);
     }
 
     70% {
-      color: hsl(230, 80%, 90%);
       text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.5),
-        0 0 0.125em hsla(320, 100%, 60%, 0.5),
-        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+        0 0 0.5em rgba(90, 47, 101, 0.15),
+        0 0 0.0625em rgba(75, 80, 146, 0.15),
+        0.25em -0.0625em 0.125em rgba(209, 92, 106, 0.05),
+        -0.25em 0.0625em 0.125em rgba(73, 129, 123, 0.1);
     }
 
     100% {
-      color: hsl(230, 40%, 80%);
       text-shadow:
-        0 0 1em hsla(320, 100%, 50%, 0.2),
-        0 0 0.125em hsla(320, 100%, 60%, 0.3),
-        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+        0 0 0.5em rgba(35, 16, 40, 0.1),
+        0 0 0.0625em rgba(18, 0, 50, 0.1),
+        0.5em -0.0625em 0.25em rgba(209, 92, 106, 0),
+        -0.5em 0.0625em 0.25em rgba(0, 33, 49, 0);
     }
   }
 
   .highlight {
+    color: #d0c4e2;
     margin: auto;
     animation: lights 5.5s 750ms linear infinite;
   }
