@@ -9,20 +9,25 @@ import TailwindLogo from "../../public/Logos/Tailwind.webp";
 import FrankPhoto from "../../public/Frank-Photo.webp";
 ---
 
-<section id="about" class="w-10/12 grid gap-6 max-w-[1350px]">
-  <h2 class="text-5xl p-5 mt-5">About me</h2>
-  <section id="info-section" class="flex items-center justify-center gap-20">
-    <figure class="w-3/12 rounded-2xl overflow-hidden">
+<section
+  id="about"
+  class="w-10/12 h-screen grid gap-16 max-w-[1500px] bg-[#080808] px-10 rounded-2xl mt-5"
+>
+  <h2 class="text-5xl pt-5 mt-5">About me</h2>
+  <section id="info-section" class="flex items-center justify-center gap-16">
+    <figure
+      class="w-3/12 rounded-2xl overflow-hidden flex flex-col items-center"
+    >
       <Image
         src={FrankPhoto}
         alt="FrankmDev Image"
         class="w-full h-full object-cover"
       />
     </figure>
-    <article class="flex-1">
-      <h3 class="text-2xl mb-8">Hi there! 🚀</h3>
-      <p class="text-justify leading-loose">
-        I'm Francisco Muñoz (Frank), a self-taught Frontend Developer seeking my
+    <article class="flex-1 p-3">
+      <h3 class="text-2xl mb-5">Hi there! 🚀</h3>
+      <p class="text-justify leading-loose pr-8">
+        I'm Francisco Muñoz (Frank), self-taught Frontend Developer seeking my
         first professional opportunity in the technology sector.<br />
          Currently pursuing a Higher Degree in Web Application Development (DAW)
         in Spain, I've gained experience through certified many courses and
@@ -34,12 +39,15 @@ import FrankPhoto from "../../public/Frank-Photo.webp";
       </p>
     </article>
   </section>
-  <section id="skills-section" class="p-3 flex justify-center items-center">
+  <section
+    id="skills-section"
+    class="p-3 flex justify-center items-center mt-4"
+  >
     <div
-      class="container flex items-center justify-center flex-col p-3 mb-3 rounded-xl bg-[#151515] max-w-min"
+      class="container flex items-center justify-center flex-col p-7 mb-3 rounded-xl bg-black max-w-min border-main border-2 border-solid"
     >
       <header class="skills-header">
-        <h2 class="skills-text text-lg mb-5">Skills</h2>
+        <h2 class="skills-text text-2xl mb-5">Skills</h2>
       </header>
       <div class="skills-list flex gap-10">
         <Image class="skill-logo" src={HtmlLogo} alt="Html Logo" />
@@ -55,7 +63,7 @@ import FrankPhoto from "../../public/Frank-Photo.webp";
 
 <style>
   .skill-logo {
-    max-width: 5rem;
+    max-width: 5.3rem;
     object-fit: contain;
   }
 </style>
