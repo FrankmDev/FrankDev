@@ -6,26 +6,35 @@ import JSLogo from "../../public/Logos/Javascript.webp";
 import ReactLogo from "../../public/Logos/React.webp";
 import AstroLogo from "../../public/Logos/Astro.webp";
 import TailwindLogo from "../../public/Logos/Tailwind.webp";
+import FrankPhoto from "../../public/Frank-Photo.webp";
 ---
 
-<section id="about" class="flex flex-col">
-  <section id="info-section">
-    <article>
-      <h2 class="text-5xl">About me</h2>
-      <p>
-        Self-taught web developer seeking my first professional opportunity in
-        the technology sector. Currently pursuing a Higher Degree in Web
-        Application Development (DAW), I've gained experience through certified
-        courses and personal projects. In addition, I've spent three years
-        tutoring, enhancing my communication and teaching skills. While I
-        haven't applied my experience professionally, I'm eager to contribute my
-        skills and knowledge in a work environment. My determination,
-        creativity, and commitment drive me to tackle new challenges.
+<section id="about" class="w-10/12 grid gap-6 max-w-[1350px]">
+  <h2 class="text-5xl p-5 mt-5">About me</h2>
+  <section id="info-section" class="flex items-center justify-center gap-20">
+    <figure class="w-3/12 rounded-2xl overflow-hidden">
+      <Image
+        src={FrankPhoto}
+        alt="FrankmDev Image"
+        class="w-full h-full object-cover"
+      />
+    </figure>
+    <article class="flex-1">
+      <h3 class="text-2xl mb-8">Im Francisco Muñoz Marín (Frank)</h3>
+      <p class="text-justify leading-loose">
+        Self-taught Frontend developer seeking my first professional opportunity
+        in the technology sector. Currently pursuing a Higher Degree in Web
+        Application Development (DAW) in Spain, I've gained experience through
+        certified many courses and personal projects.<br /> In addition, I've
+        spent three years tutoring, enhancing my communication and teaching
+        skills. <br /> While I haven't applied my experience professionally, I'm
+        eager to contribute my skills and knowledge in a work environment. My
+        determination, creativity, and commitment drive me to tackle new
+        challenges.
       </p>
     </article>
-    <figure>Imagen</figure>
   </section>
-  <section id="skills-section" class="p-3">
+  <section id="skills-section" class="p-3 flex justify-center items-center">
     <div
       class="container flex items-center justify-center flex-col p-3 mb-3 rounded-xl bg-[#151515] max-w-min"
     >
@@ -46,9 +55,7 @@ import TailwindLogo from "../../public/Logos/Tailwind.webp";
 
 <style>
   .skill-logo {
-    max-width: 4.5rem;
+    max-width: 5rem;
     object-fit: contain;
-  }
-  .container {
   }
 </style>
