@@ -234,25 +234,3 @@ import HeroImg from "../../public/Hero-Img.webp";
     animation: lights 5.5s 750ms linear infinite;
   }
 </style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const img = document.querySelector(".hero-img");
-
-    const isElementInViewport = (e) => {
-      const rect = e.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight)
-      );
-    };
-
-    const handleScroll = () => {
-      img.classList.toggle("animate", isElementInViewport(img));
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-  });
-</script>
