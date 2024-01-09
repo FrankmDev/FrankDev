@@ -3,23 +3,23 @@ import { Image } from "astro:assets";
 import HeroImg from "../../public/Hero-Img.webp";
 ---
 
-<section id="hero" class="w-10/12 grid gap-6 max-w-[1350px]">
+<section id="hero" class="w-9/12 grid gap-6 max-w-[1350px]">
   <div class="hero-text flex flex-col justify-center items-start gap-4">
-    <p class="border-2 border-solid border-main rounded-lg text-base p-3">
+    <p class="border-2 border-solid border-main rounded-lg text-lg p-3">
       Welcome to my portfolio
     </p>
-    <h1 class="bg-transparent text-8xl leading-none">
-      Hi there! I'm <span class="highlight text-9xl">Frank</span>!
+    <h1 class="bg-transparent text-9xl leading-none">
+      Hi there! I'm <span class="highlight text-[9rem]">Frank</span>!
     </h1>
-    <p class="text-base">
-      Passionate self-taught <span class="highlight text-xl"
+    <p class="text-lg">
+      Passionate self-taught <span class="highlight text-2xl"
         >Frontend Developer</span
       > .
     </p>
 
-    <div class="flex items-center justify-center gap-4 mt-3">
+    <div class="flex items-center justify-center gap-5 mt-4">
       <button
-        class="cta-hero relative overflow-hidden h-12 rounded-lg text-white text-xl p-5 bg-main"
+        class="cta-hero relative overflow-hidden h-14 rounded-lg text-white text-2xl p-5 bg-main"
         type="button"
       >
         <span class="cta-hero-content z-10 relative">Let's conect</span>
@@ -59,17 +59,17 @@ import HeroImg from "../../public/Hero-Img.webp";
         </svg>
       </a>
       <div
-        class="download-btn text-center rounded-lg relative w-32 h-11 bg-main"
+        class="download-btn text-center rounded-lg relative w-40 h-14 bg-main"
       >
         <div class="button-wrapper">
-          <div class="text flex items-center justify-center top-0 text-sm">
+          <div class="text flex items-center justify-center top-0 text-lg">
             Download CV
           </div>
           <span
             class="icon text-white flex items-center justify-center top-full"
           >
             <svg
-              class="w-6 h-6"
+              class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               role="img"
@@ -183,54 +183,5 @@ import HeroImg from "../../public/Hero-Img.webp";
 
   .download-btn:hover .icon {
     top: 0;
-  }
-  /* HIGHLIGHT */
-
-  @keyframes lights {
-    0% {
-      text-shadow:
-        0 0 0.5em rgba(90, 47, 101, 0.1),
-        0 0 0.0625em rgba(75, 80, 146, 0.15),
-        -0.5em -0.0625em 0.25em rgba(209, 92, 106, 0),
-        0.5em 0.0625em 0.25em rgba(73, 129, 123, 0);
-    }
-
-    30% {
-      text-shadow:
-        0 0 0.5em rgba(90, 47, 101, 0.15),
-        0 0 0.0625em rgba(75, 80, 146, 0.15),
-        -0.25em -0.0625em 0.125em rgba(209, 92, 106, 0.05),
-        0.25em 0.0625em 0.125em rgba(73, 129, 123, 0.1);
-    }
-
-    40% {
-      text-shadow:
-        0 0 0.5em rgba(90, 47, 101, 0.15),
-        0 0 0.0625em rgba(75, 80, 146, 0.15),
-        -0.125em -0.0625em 0.0625em rgba(209, 92, 106, 0.05),
-        0.125em 0.0625em 0.0625em rgba(73, 129, 123, 0.1);
-    }
-
-    70% {
-      text-shadow:
-        0 0 0.5em rgba(90, 47, 101, 0.15),
-        0 0 0.0625em rgba(75, 80, 146, 0.15),
-        0.25em -0.0625em 0.125em rgba(209, 92, 106, 0.05),
-        -0.25em 0.0625em 0.125em rgba(73, 129, 123, 0.1);
-    }
-
-    100% {
-      text-shadow:
-        0 0 0.5em rgba(35, 16, 40, 0.1),
-        0 0 0.0625em rgba(18, 0, 50, 0.1),
-        0.5em -0.0625em 0.25em rgba(209, 92, 106, 0),
-        -0.5em 0.0625em 0.25em rgba(0, 33, 49, 0);
-    }
-  }
-
-  .highlight {
-    color: #d0c4e2;
-    margin: auto;
-    animation: lights 5.5s 750ms linear infinite;
   }
 </style>
