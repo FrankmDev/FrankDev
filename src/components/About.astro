@@ -10,12 +10,12 @@ import FrankPhoto from "../../public/Frank-Photo.webp";
 ---
 
 <section
-  class="section grid gap-16 px-10 rounded-2xl border-main border-2 border-solid"
+  class="section flex flex-col items-center justify-around gap-10 px-10 rounded-2xl border-main border-2 border-solid"
 >
   <h2 class="section-primary">About me</h2>
   <section id="info-section" class="flex items-center justify-center gap-16">
     <figure
-      class="w-3/12 rounded-2xl overflow-hidden flex flex-col items-center"
+      class="w-[27%] rounded-2xl overflow-hidden flex flex-col items-center"
     >
       <Image
         src={FrankPhoto}
@@ -24,17 +24,16 @@ import FrankPhoto from "../../public/Frank-Photo.webp";
       />
     </figure>
     <article class="flex-1 p-3">
-      <h3 class="text-2xl mb-5">Greetings! 🚀</h3>
-      <p class="text-justify leading-loose pr-8">
-        I'm Francisco Muñoz (Frank), self-taught Frontend Developer seeking my
-        first professional opportunity in the technology sector.<br />
-        Currently pursuing a Higher Degree in Web Application Development (DAW) in
-        Spain, I've gained experience through certified many courses and personal
-        projects.<br /> In addition, I've spent three years tutoring, enhancing my
-        communication and teaching skills. <br /> While I haven't applied my experience
-        professionally, I'm eager to contribute my skills and knowledge in a work
-        environment. My determination, creativity, and commitment drive me to tackle
-        new challenges.
+      <h3 class="text-3xl mb-5">Greetings! 🚀</h3>
+      <p class="text-lg text-justify leading-loose pr-8">
+        I'm Frank, self-taught Frontend Developer, embarked on a journey of
+        continuous learning, complemented by certified courses in HTML, CSS,
+        JavaScript and React, on Udemy and FreeCodeCamp. <br /> Currently pursuing
+        a degree in Web Application Development at Cordoba's Higher Education Institute,
+        I'm passionate about translating ideas into interactive and visually appealing
+        digital experiences.<br />
+        Dedicated to creating modern and unique web interfaces, prioritizing user
+        experience and improving the quality of the company's product.
       </p>
     </article>
   </section>
@@ -43,12 +42,12 @@ import FrankPhoto from "../../public/Frank-Photo.webp";
     class="p-3 flex justify-center items-center mt-3"
   >
     <div
-      class="container flex items-center justify-center flex-col p-7 mb-3 rounded-xl max-w-min border-main border-2 border-solid"
+      class="container flex items-center justify-center flex-col p-7 mb-3 rounded-xl max-w-min bg-[#090909]"
     >
       <header class="skills-header">
-        <h2 class="skills-text text-2xl mb-5">Skills</h2>
+        <h2 class="skills-text text-2xl mb-6">Skills</h2>
       </header>
-      <div class="skills-list flex gap-10">
+      <div class="skills-list flex gap-12">
         <Image class="skill-logo" src={HtmlLogo} alt="Html Logo" />
         <Image class="skill-logo" src={CssLogo} alt="CSS Logo" />
         <Image class="skill-logo" src={JSLogo} alt="Javascript Logo" />
