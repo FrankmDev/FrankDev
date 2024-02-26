@@ -11,7 +11,7 @@ import HeroImg from "../../public/Hero-Img.webp";
     <h1 class="bg-transparent text-9xl leading-none">
       Hi there! I'm <span class="highlight text-[9rem]">Frank</span>!
     </h1>
-    <p class="text-2xl highlight">Frontend Developer Junior</p>
+    <p class="description text-2xl highlight">Frontend Developer Junior</p>
 
     <div class="flex items-center justify-center gap-5 mt-4">
       <button
@@ -183,4 +183,22 @@ import HeroImg from "../../public/Hero-Img.webp";
   }
 
   /* MEDIA QUERIES */
+
+  @media (width<=1500px) {
+    h1 {
+      font-size: 6.5rem;
+    }
+    .description {
+      font-size: 1rem;
+    }
+    button {
+      font-size: 1rem;
+    }
+    .button-wrapper div {
+      font-size: 1.2rem;
+    }
+    .social svg {
+      width: 35px;
+    }
+  }
 </style>
