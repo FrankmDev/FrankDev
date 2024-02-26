@@ -3,8 +3,8 @@ import Logo from "../../public/Logo.webp";
 import { Image } from "astro:assets";
 ---
 
-<header class="flex items-center justify-between mt-8 m-16 w-10/12 bg-red-950">
-  <Image src={Logo} alt="FrankDev Logo" class="w-48 h-auto" />
+<header class="flex items-center justify-between mt-8 m-16 w-10/12">
+  <Image src={Logo} alt="FrankDev Logo" class="logo w-48 h-auto" />
   <nav class="flex items-center justify-center gap-20">
     <ul class="flex items-center justify-center gap-20">
       <li><a href="#" class="nav-item">Principal</a></li>
@@ -79,5 +79,23 @@ import { Image } from "astro:assets";
 
   button:hover span {
     transform: translateX(7px);
+  }
+
+  /* MEDIA QUERIES */
+
+  @media (width<=1500px) {
+    .nav-item,
+    button {
+      font-size: 0.9rem;
+    }
+    .logo {
+      width: 8rem;
+    }
+    nav ul {
+      gap: 3rem;
+    }
+    button {
+      width: 10rem;
+    }
   }
 </style>
